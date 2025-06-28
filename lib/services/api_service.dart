@@ -13,7 +13,7 @@ class ApiService {
       return jsonDecode(response.body);
     } else {
       throw Exception(
-        "Erro ao carregar os dado sushis: ${response.statusCode}",
+        "Erro ao carregar os dados sushis: ${response.statusCode}",
       );
     }
   }
@@ -24,9 +24,7 @@ class ApiService {
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     } else {
-      throw Exception(
-        "Erro ao carregar os dados sushis: ${response.statusCode}",
-      );
+      throw Exception("Erro ao caregar  dados combos: ${response.statusCode}");
     }
   }
 }
